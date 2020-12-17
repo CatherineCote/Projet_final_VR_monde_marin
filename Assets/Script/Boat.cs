@@ -40,14 +40,16 @@ public class Boat : MonoBehaviour
             SpawnBoat();
             Debug.Log("BATEAU");
         }
-        
+       
+
 
     }
 
     void SpawnBoat()
     {
-        Instantiate(boatPrefab, new Vector3(-100, 150, 61), boatPrefab.transform.rotation);
+        Instantiate(boatPrefab, new Vector3(-90, 150, 61), boatPrefab.transform.rotation);
         boatAudio.PlayOneShot(boatSound, 1.0f);
-      
+        
+
     }
 }

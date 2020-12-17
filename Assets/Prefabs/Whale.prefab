@@ -612,6 +612,7 @@ GameObject:
   - component: {fileID: 7440756925762780637}
   - component: {fileID: 1338151758413021254}
   - component: {fileID: 3982328761098768746}
+  - component: {fileID: 8532540101096744359}
   m_Layer: 0
   m_Name: Whale
   m_TagString: Untagged
@@ -627,8 +628,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5843905232086028238}
   m_LocalRotation: {x: -0, y: 0.37026483, z: -0, w: 0.9289262}
-  m_LocalPosition: {x: 17.632, y: 26.833, z: -39.232}
-  m_LocalScale: {x: 13.264016, y: 13.264016, z: 13.264016}
+  m_LocalPosition: {x: 16.935, y: 31.859, z: -40.48}
+  m_LocalScale: {x: 32.893433, y: 32.893433, z: 32.893433}
   m_Children:
   - {fileID: 4365886194318640532}
   - {fileID: 4716469790841163982}
@@ -667,6 +668,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0621db271da53043b8e897119988ede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8532540101096744359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5843905232086028238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831173f6002d1b5488cc277353f4381f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6559868279081272730
