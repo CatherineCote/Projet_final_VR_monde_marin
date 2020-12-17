@@ -13,9 +13,9 @@ public class playerControler : MonoBehaviour
     //Limite sur l'axe des x
     private float xLimit = 36;
     //Limite sur l'axe des y
-    private float yLimit = 16.5f;
+    private float yLimit = 15.5f;
     //Limite sur l'axe des y
-    private float yLimitTop = 19.5f;
+    private float yLimitTop = 18.5f;
     //Limite sur l'axe des z
     private float zLimit = 95;
     //variable pour le son de bulles

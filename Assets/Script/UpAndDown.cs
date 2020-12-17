@@ -19,6 +19,6 @@ public class UpAndDown : MonoBehaviour
       //Le player va faire up/down en loop grace à la commande pinPong
       //le minimum est de 16.5 et le maximum est de 19.5
       //O conserve la position présente du player sur l'axe des X et l'axe des Z
-        transform.position = new Vector3(transform.position.x, Mathf.Lerp(16.5f, 19.5f, Mathf.PingPong(Time.time * speed, 1)), transform.position.z);
+        transform.position = new Vector3(transform.position.x, Mathf.Lerp(15.5f, 18.5f, Mathf.PingPong(Time.time * speed, 1)), transform.position.z);
     }
 }
