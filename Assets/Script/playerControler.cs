@@ -35,10 +35,10 @@ public class playerControler : MonoBehaviour
     {
         
         //Va chercher l'axe horizontal
-        horizontalInput = Input.GetAxis("Horizontal");
+        //horizontalInput = Input.GetAxis("Horizontal");
         verticaleInput = Input.GetAxis("Vertical");
         //transfom le translate dans la direction back fois la temps la vitesse et l'axe horizontale
-        transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
+       // transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
         transform.Translate(Vector3.forward * Time.deltaTime * speed * verticaleInput);
         
         // si la position x depasse 36 (la limite de la plateforme)

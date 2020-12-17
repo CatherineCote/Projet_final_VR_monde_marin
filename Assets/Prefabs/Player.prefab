@@ -795,7 +795,6 @@ GameObject:
   - component: {fileID: 8298660193104365419}
   - component: {fileID: 8298660193104365420}
   - component: {fileID: 8298660193104365417}
-  - component: {fileID: 8298660193104365416}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -993,21 +992,6 @@ MonoBehaviour:
   bubbleSound: {fileID: 8300000, guid: f6a9a06bf4d0b524fba0d4c1b6a9440e, type: 3}
   bubbleParticle: {fileID: 8184637630748283120}
   splashParticle: {fileID: 8298660192742798759}
---- !u!114 &8298660193104365416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8299800572791015481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b60d1a9169197c64f9975a1699c20292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalInput: 0
-  verticaleInput: 0
-  bubbleSound: {fileID: 8300000, guid: f6a9a06bf4d0b524fba0d4c1b6a9440e, type: 3}
 --- !u!1 &8299801405975901049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,6 +1248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8303116447744651633}
   - component: {fileID: 8269177258273812405}
+  - component: {fileID: 3928381707915477291}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1353,6 +1338,21 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000008470961, y: 0.0011934831, z: -0.0002259718}
     m_Extent: {x: 0.0022412618, y: 0.0028217828, z: 0.001599066}
   m_DirtyAABB: 0
+--- !u!114 &3928381707915477291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8300043306815457317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e19da6a22259d4299a67d51a3c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 600
+  turnSpeed: 400
+  gravity: 0
 --- !u!1 &8300075121925210327
 GameObject:
   m_ObjectHideFlags: 0
