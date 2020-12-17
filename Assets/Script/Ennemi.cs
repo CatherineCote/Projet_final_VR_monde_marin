@@ -5,7 +5,7 @@ using UnityEngine;
 public class Ennemi : MonoBehaviour
 {
     //Variable pour la vitesse
-    private float speed = 5;
+    private float speed = 8;
     //Variable pour le rigidbody de l'ennemi
     private Rigidbody enemyRb;
     //On crée un game objeco pour le player

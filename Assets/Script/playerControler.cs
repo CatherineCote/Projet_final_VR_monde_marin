@@ -16,6 +16,8 @@ public class playerControler : MonoBehaviour
     private float yLimit = 16.5f;
     //Limite sur l'axe des y
     private float yLimitTop = 19.5f;
+    //Limite sur l'axe des z
+    private float zLimit = 115;
     //variable pour le son de bulles
     public AudioClip bubbleSound;
     //source qui se trouve dans le player
@@ -61,10 +63,15 @@ public class playerControler : MonoBehaviour
             //On désigne la position selon la limite des 3 axes dans le negatif
             transform.position = new Vector3(transform.position.x, yLimitTop, transform.position.z);
         }
-        /*if (transform.position.z > 30)
+        else if (transform.position.z > zLimit)
         {
-         
-            Debug.Log("vous avez dépasser 30 sur l'axe Z");
-        }*/
+            //On désigne la position selon la limite des 3 axes dans le negatif
+            transform.position = new Vector3(transform.position.x, transform.position.y, zLimit);
+        }
+        else if (transform.position.z < -zLimit)
+        {
+            //On désigne la position selon la limite des 3 axes dans le negatif
+            transform.position = new Vector3(transform.position.x, transform.position.y, -zLimit);
+        }
     }
 }

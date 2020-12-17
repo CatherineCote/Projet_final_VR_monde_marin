@@ -11,9 +11,7 @@ public class Whale : MonoBehaviour
     //private PlayerController playerGo;
 
     public AudioClip whaleSound;
-    public AudioSource whaleAudio;
-
-    public ParticleSystem waterParticle;
+    private AudioSource whaleAudio;
 
     //Variable pur aller chercher le script du player
     private playerControler playerControlerScript;
@@ -24,10 +22,9 @@ public class Whale : MonoBehaviour
     {
         //Dans le gameObject player, va chercher le script playerControler
         playerControlerScript = GameObject.Find("Player").GetComponent<playerControler>();
-        //SpawnWhale();
-        //SpawnWhale(); ---> semble fonctionner pour spawn 1 fois
+       
         
-        //whaleAudio = GetComponent<AudioSource>();
+        whaleAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -46,8 +43,7 @@ public class Whale : MonoBehaviour
     void SpawnWhale()
     {
         Instantiate(whalePrefab, new Vector3(96, 62, 185), whalePrefab.transform.rotation);
-        //whaleAudio.PlayOneShot(whaleSound, 1.0f);
-        //waterParticle.Play();
+        whaleAudio.PlayOneShot(whaleSound, 1.0f);
     }
 
 
