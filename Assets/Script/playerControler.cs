@@ -17,7 +17,7 @@ public class playerControler : MonoBehaviour
     //Limite sur l'axe des y
     private float yLimitTop = 19.5f;
     //Limite sur l'axe des z
-    private float zLimit = 115;
+    private float zLimit = 95;
     //variable pour le son de bulles
     public AudioClip bubbleSound;
     //source qui se trouve dans le player

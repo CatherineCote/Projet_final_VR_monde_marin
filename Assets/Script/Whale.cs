@@ -43,6 +43,7 @@ public class Whale : MonoBehaviour
     void SpawnWhale()
     {
         Instantiate(whalePrefab, new Vector3(96, 62, 185), whalePrefab.transform.rotation);
+
         whaleAudio.PlayOneShot(whaleSound, 1.0f);
     }
 
