@@ -7,7 +7,7 @@ public class Whale : MonoBehaviour
     //Ajouter un tableau pour y insérer des éléments
     public GameObject whalePrefab;
 
-
+    private float limit = -50;
     //private PlayerController playerGo;
 
     public AudioClip whaleSound;
@@ -37,7 +37,12 @@ public class Whale : MonoBehaviour
                 SpawnWhale();
                 Debug.Log("BALEINE");
         }
-        
+        if (transform.position.z < limit)
+        {
+            // Destroy me
+            Destroy(gameObject);
+        }
+
     }
 
     void SpawnWhale()
@@ -45,6 +50,7 @@ public class Whale : MonoBehaviour
         Instantiate(whalePrefab, new Vector3(96, 62, 185), whalePrefab.transform.rotation);
 
         whaleAudio.PlayOneShot(whaleSound, 1.0f);
+       
     }
 
 
