@@ -5,7 +5,7 @@ using UnityEngine;
 public class CraneLimit : MonoBehaviour
 {
     //Limite sur l'axe des y
-    private float yLimit = 1;
+    private float yLimit = 9;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +19,7 @@ public class CraneLimit : MonoBehaviour
         {
             //On désigne la position selon la limite des 3 axes dans le negatif
             transform.position = new Vector3(transform.position.x, yLimit, transform.position.z);
+            Debug.Log("bcjasbcj");
         }
     }
 }
