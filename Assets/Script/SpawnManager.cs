@@ -74,7 +74,7 @@ public class SpawnManager : MonoBehaviour
         //Si le gameover est a faux exécute le code
 
         //génère une position au hasard selon le range qu'on lui permet
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnPosX, spawnPosX), Random.Range(spawnPosY, spawnPosYTop), 100);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnPosX, spawnPosX), Random.Range(-spawnPosY, spawnPosY), 100);
 
         //Instantiate le prefabs obstacle selon le range établie
         Instantiate(ObstaclePrefabs03, spawnPos, ObstaclePrefabs03.transform.rotation);

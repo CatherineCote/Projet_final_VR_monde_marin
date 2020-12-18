@@ -17,6 +17,8 @@ public class Cimetiere : MonoBehaviour
     //Variable pour la systeme de particule pour splash/bulles
     public ParticleSystem bubbleParticle;
     public ParticleSystem splashParticle;
+    public GameObject lightPrefab;
+    //public ParticleSystem lightParticle;
     private bool spawned = false;
    
     // Start is called before the first frame update
@@ -25,7 +27,7 @@ public class Cimetiere : MonoBehaviour
         //Dans le gameObject player, va chercher le script playerControler
         playerControlerScript = GameObject.Find("Player").GetComponent<playerControler>();
         cimetiereAudio = GetComponent<AudioSource>();
-
+        //lightParticle.Stop();
     }
 
     // Update is called once per frame
@@ -36,11 +38,13 @@ public class Cimetiere : MonoBehaviour
             cimetiereAudio.PlayOneShot(cimetiereSound, 1.0f);
             spawned = true;
             SpawnCrane();
+            //lightParticle.Play();
         }
         
         void SpawnCrane()
         {
             Instantiate(cranePrefab, new Vector3(6, 47, 98), cranePrefab.transform.rotation);
+            Instantiate(lightPrefab, new Vector3(17, 0, 93), lightPrefab.transform.rotation);
             cimetiereAudio.PlayOneShot(craneSound, 1.0f);
             //On joue les particules des bulles et du splash
             bubbleParticle.Play();
