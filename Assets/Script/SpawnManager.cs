@@ -20,14 +20,12 @@ public class SpawnManager : MonoBehaviour
     //variable limitant la position du spawn de l'ennemi à la pateforme du jeu 
     private float spawnEnnemiRangeX = 18;
     
-    //Variable pour le delais du spawn ainsi que l'interval pour les possions normal
+    //Variable pour le delais du spawn ainsi que l'interval pour les poissons normal
     private float startDelay = 0.5f;
     private float spawnInterval = 2f;
 
-    //Variable pour le delais du spawn 
+    //Variable pour le delais du spawn  pour l'ennemi
     private float startDelayE = 5;
-    //private float spawnIntervalE = 5f;
-
  
     // Start is called before the first frame update
     void Start()
@@ -47,48 +45,40 @@ public class SpawnManager : MonoBehaviour
     void SpawnObstacle()
 
     {
-        //Si le gameover est a faux exécute le code
-       
             //génère une position au hasard selon le range qu'on lui permet
             Vector3 spawnPos = new Vector3(100, 18, Random.Range(-spawnPosZ, spawnPosZ));
 
-            //Instantiate le prefabs obstacle selon le range établie
+            //Instantiate le prefabs obstacle (poisson normal) selon le range établie
             Instantiate(ObstaclePrefabs, spawnPos, ObstaclePrefabs.transform.rotation);
 
     }
     void SpawnObstacle02()
 
     {
-        //Si le gameover est a faux exécute le code
-
         //génère une position au hasard selon le range qu'on lui permet
         Vector3 spawnPos = new Vector3(-80, Random.Range(spawnPosY, spawnPosYTop), Random.Range(-spawnPosZ, spawnPosZ));
 
-        //Instantiate le prefabs obstacle selon le range établie
+        //Instantiate le prefabs obstacle (poisson normal) selon le range établie
         Instantiate(ObstaclePrefabs02, spawnPos, ObstaclePrefabs02.transform.rotation);
 
     }
     void SpawnObstacle03()
 
     {
-        //Si le gameover est a faux exécute le code
-
         //génère une position au hasard selon le range qu'on lui permet
         Vector3 spawnPos = new Vector3(Random.Range(-spawnPosX, spawnPosX), Random.Range(-spawnPosY, spawnPosY), 100);
 
-        //Instantiate le prefabs obstacle selon le range établie
+        //Instantiate le prefabs obstacle (poisson normal) selon le range établie
         Instantiate(ObstaclePrefabs03, spawnPos, ObstaclePrefabs03.transform.rotation);
 
     }
     void SpawnObstacle04()
 
     {
-        //Si le gameover est a faux exécute le code
-
-        //génère une position au hasard selon le range qu'on lui permet
+       //génère une position au hasard selon le range qu'on lui permet
         Vector3 spawnPos = new Vector3(-100, Random.Range(spawnPosY, spawnPosYTop), 100);
 
-        //Instantiate le prefabs obstacle selon le range établie
+        //Instantiate le prefabs obstacle (poisson normal)  selon le range établie
         Instantiate(ObstaclePrefabs04, spawnPos, ObstaclePrefabs04.transform.rotation);
 
     }
@@ -99,7 +89,7 @@ public class SpawnManager : MonoBehaviour
         //génère une position au hasard selon le range qu'on lui permet pour l'ennemi
         Vector3 spawnPos = new Vector3(Random.Range(-spawnEnnemiRangeX, spawnEnnemiRangeX), 50, 210);
 
-        //Instantiate le prefabs obstacle selon le range établie
+        //Instantiate le prefabs enemi selon le range établie
         Instantiate(EnnemiPrefabs, spawnPos, EnnemiPrefabs.transform.rotation);
 
 

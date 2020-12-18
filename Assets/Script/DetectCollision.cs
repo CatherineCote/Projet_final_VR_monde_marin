@@ -8,7 +8,7 @@ public class DetectCollision : MonoBehaviour
     public AudioClip bubbleSound;
     //source qui se trouve dans le player
     private AudioSource playerAudio;
-    //Variable pour la systeme de particule avec celle de saleté
+    //Variable pour la systeme de particule des bulles et du splash
     public ParticleSystem bubbleParticle;
     public ParticleSystem splashParticle;
     // Start is called before the first frame update
@@ -24,6 +24,8 @@ public class DetectCollision : MonoBehaviour
     {
         
     }
+    //Si le collider rentre en contacte avec other 
+    //other est le tag enemi placer sur le poisson enemi
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Enemi")
@@ -39,7 +41,7 @@ public class DetectCollision : MonoBehaviour
             //On détruit le gameObject avec le tag enemi
             Destroy(other.gameObject);
             //On écrit ce message dans la console
-            Debug.Log("POISSON");
+            Debug.Log("ATTENTION UN POISSON VOUS A FONCEZ DESSUS");
 
          
         }

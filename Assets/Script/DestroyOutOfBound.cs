@@ -5,7 +5,7 @@ using UnityEngine;
 public class DestroyOutOfBound : MonoBehaviour
 {
     
-    //Limite du bas de l'écran
+    //Limite du bas/haut/droite/gauche de l'écran
     private float lowerBound = -30;
     private float topBound = 250;
     private float leftBound = -90;
@@ -19,13 +19,14 @@ public class DestroyOutOfBound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Lorsqu'un GameObject dépense la limite du haut l'objet est détruit
+        //Lorsqu'un GameObject dépense la limite de gauche l'objet est détruit
       
         if (transform.position.x < leftBound)
         {
             // Destroy me
             Destroy(gameObject);
         }
+        //Lorsqu'un GameObject dépense la limite de droite l'objet est détruit
         else if (transform.position.x > rightBound)
         {
             // Destroy me
@@ -38,6 +39,7 @@ public class DestroyOutOfBound : MonoBehaviour
             Destroy(gameObject);
 
         }
+        //Lorsqu'un GameObject dépense la limite du haut l'objet est détruit
         else if (transform.position.z > topBound)
         {
             // Destroy me

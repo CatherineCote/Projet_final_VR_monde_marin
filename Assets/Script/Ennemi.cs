@@ -8,7 +8,7 @@ public class Ennemi : MonoBehaviour
     private float speed = 10;
     //Variable pour le rigidbody de l'ennemi
     private Rigidbody enemyRb;
-    //On crée un game objeco pour le player
+    //On crée un game objecT pour le player
     private GameObject player;
     //Créer une variavle qui se réfere au script du player
     private playerControler playerControlerScript;
@@ -16,10 +16,7 @@ public class Ennemi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Dans le script du player, va dans le gameObject, trouve player et va cerhcer son component "playerController"
-        //(le script est un component aussi)
-        playerControlerScript = GameObject.Find("Player").GetComponent<playerControler>();
-
+        
         //Va chercher le rigidbody qui se trouve sur l'ennemi
         enemyRb = GetComponent<Rigidbody>();
         //Player, on va chercher le gameObject player
