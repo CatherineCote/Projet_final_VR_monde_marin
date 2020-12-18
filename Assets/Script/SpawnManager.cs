@@ -97,7 +97,7 @@ public class SpawnManager : MonoBehaviour
     {
 
         //génère une position au hasard selon le range qu'on lui permet pour l'ennemi
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnEnnemiRangeX, spawnEnnemiRangeX), 50, 100);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnEnnemiRangeX, spawnEnnemiRangeX), 50, 210);
 
         //Instantiate le prefabs obstacle selon le range établie
         Instantiate(EnnemiPrefabs, spawnPos, EnnemiPrefabs.transform.rotation);

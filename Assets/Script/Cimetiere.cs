@@ -8,8 +8,7 @@ public class Cimetiere : MonoBehaviour
     private playerControler playerControlerScript;
     //prefab du crane pour le faire apparaitre
     public GameObject cranePrefab;
-    //audio du crane
-    public AudioClip craneSound;
+    
     //variable pour le son de bulles
     public AudioClip cimetiereSound;
     //source qui se trouve dans le player
@@ -45,7 +44,6 @@ public class Cimetiere : MonoBehaviour
         {
             Instantiate(cranePrefab, new Vector3(6, 47, 98), cranePrefab.transform.rotation);
             Instantiate(lightPrefab, new Vector3(17, 0, 93), lightPrefab.transform.rotation);
-            cimetiereAudio.PlayOneShot(craneSound, 1.0f);
             //On joue les particules des bulles et du splash
             bubbleParticle.Play();
             splashParticle.Play();

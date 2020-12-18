@@ -6,10 +6,14 @@ public class CraneLimit : MonoBehaviour
 {
     //Limite sur l'axe des y
     private float yLimit = 9;
+    //audio du crane
+    public AudioClip craneSound;
+    private AudioSource craneAudio;
     // Start is called before the first frame update
     void Start()
     {
-        
+        craneAudio = GetComponent<AudioSource>();
+        craneAudio.PlayOneShot(craneSound, 1.0f);
     }
 
     // Update is called once per frame
