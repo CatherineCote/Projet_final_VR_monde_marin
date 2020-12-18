@@ -7,7 +7,7 @@ public class playerControler : MonoBehaviour
     //Variable qui va chercher l'axe vertical
     public float verticaleInput;
     //Variable pour la vitesse
-    private float speed = 5;
+    private float speed = 10;
     //Limite sur l'axe des x
     private float xLimit = 36;
     //Limite sur l'axe des y
